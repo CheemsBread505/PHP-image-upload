@@ -11,7 +11,6 @@
 <body>
 
     <h2>Only upload ".png, .jpg, .gif" files</h2>
-    <h3>SFW only!!!</h3>
 
     <form action="upload.php" method="post" enctype="multipart/form-data">
         Select image to upload:
@@ -41,7 +40,22 @@
         foreach($images as $image) {
             echo '<img src="'.$image.'" /><br />';
         }
+
+        $dirname = "uploads/";
+        $images = glob($dirname."*.jpeg");
+        
+        foreach($images as $image) {
+            echo '<img src="'.$image.'" /><br />';
+        }
+        
+        $dirname = "uploads/";
+        $images = glob($dirname."*.webp");
+        
+        foreach($images as $image) {
+            echo '<img src="'.$image.'" /><br />';
+        }
         
     ?>
+
 </body>
 </html>
