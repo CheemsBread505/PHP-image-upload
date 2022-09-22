@@ -10,13 +10,17 @@
 </head>
 <body>
 
-    <h2>Only upload ".png, .jpg, .gif" files</h2>
+    <h2>Only upload ".png, .jpg, .webp" files</h2>
 
     <form action="upload.php" method="post" enctype="multipart/form-data">
         Select image to upload:
         <input type="file" name="fileToUpload" id="fileToUpload">
         <input type="submit" value="Upload Image" name="submit">
       </form>
+
+      <br>
+
+      <button><a href="download.php">Download all images</a></button>
 
     <?php
 
@@ -29,13 +33,6 @@
 
         $dirname = "uploads/";
         $images = glob($dirname."*.jpg");
-        
-        foreach($images as $image) {
-            echo '<img src="'.$image.'" /><br />';
-        }
-
-        $dirname = "uploads/";
-        $images = glob($dirname."*.gif");
         
         foreach($images as $image) {
             echo '<img src="'.$image.'" /><br />';
