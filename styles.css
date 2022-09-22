@@ -1,14 +1,18 @@
 img {
     display: block;
     max-width:530px;
-    max-height:130px;
+    max-height:230px;
     width: auto;
     height: auto;
-    border: 1px solid #ddd;
+    border: 5px solid #fff;
     border-radius: 4px;
-    padding: 5px;
+    padding: 0px;
 }
 
 body {
     background-color: #f0e0d6;
+}
+
+h2 {
+    font-family: Inconsolata;
 }

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
     <link rel="icon" type="image/x-icon" href="icon.png">
     <title>PHP image uploader</title>
 </head>
@@ -21,6 +22,9 @@
       <br>
 
       <button><a href="download.php">Download all images</a></button>
+
+      <br>
+      <br>
 
     <?php
 
